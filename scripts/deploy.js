@@ -7,7 +7,7 @@ async function main() {
   console.log("Account balance:", (await hre.ethers.provider.getBalance(deployer.address)).toString());
   
   // Check if NameRegistry already deployed (Base Mainnet)
-  const existingNameRegistry = "0x0Eb28d2b84F48CE18742f6C42C5BA18c17b0d4E3";
+  const existingNameRegistry = "0x96A6802D7721016bB9c1181aaf95900335734115";
   const network = hre.network.name;
   
   let nameRegistryAddress;
