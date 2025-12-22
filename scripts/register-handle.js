@@ -8,9 +8,11 @@ async function main() {
   const CONTROLLER = process.env.CONTROLLER || signer.address;
   
   // NameRegistry addresses
+  // NOTE: For Base mainnet we default to the current V2 deployment.
+  // You can override with NAME_REGISTRY_ADDRESS env var.
   const ADDRESSES = {
-    base: "0x0Eb28d2b84F48CE18742f6C42C5BA18c17b0d4E3",
-    baseSepolia: "", // Add when deployed
+    base: process.env.NAME_REGISTRY_ADDRESS || "0x87B9fD42553067BeBc2Abf42c7045C8F2F7D1A79",
+    baseSepolia: process.env.NAME_REGISTRY_ADDRESS || "", // Add when deployed / override
     hardhat: "" // Will be deployed fresh
   };
   

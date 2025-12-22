@@ -18,14 +18,17 @@ Logos Protocol provides the foundational blockchain layer for Logos - AI-powered
 
 | Contract | Address |
 |----------|---------|
-| NameRegistry | `0x0Eb28d2b84F48CE18742f6C42C5BA18c17b0d4E3` |
-| LogosAccountFactory | *Pending* |
+| NameRegistry (V2) | `0x87B9fD42553067BeBc2Abf42c7045C8F2F7D1A79` |
+| LogosAccountFactory (V2) | `0x7553244FB04ff64EA0B86cA16F0427feb7F4E263` |
+
+Legacy (V1):
+- NameRegistry V1: `0x96A6802D7721016bB9c1181aaf95900335734115`
 
 ### Registered Handles
 
 | Handle | Controller | DID |
 |--------|------------|-----|
-| MARAT | `0x0F4229f05190c347F38D62D35A95F9ca2b7F4368` | `did:logos:MARAT` |
+See `n4y.ai/logos/DEPLOYMENT.md` for the up-to-date list.
 
 ## Architecture
 

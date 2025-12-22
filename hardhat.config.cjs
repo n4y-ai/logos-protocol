@@ -1,7 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY || "0x0000000000000000000000000000000000000000000000000000000000000001";
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
 const BASESCAN_API_KEY = process.env.BASESCAN_API_KEY || "";
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -23,12 +23,12 @@ module.exports = {
     base: {
       url: "https://mainnet.base.org",
       chainId: 8453,
-      accounts: [PRIVATE_KEY]
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : []
     },
     baseSepolia: {
       url: "https://sepolia.base.org",
       chainId: 84532,
-      accounts: [PRIVATE_KEY]
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : []
     }
   },
   etherscan: {

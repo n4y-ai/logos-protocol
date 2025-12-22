@@ -6,7 +6,9 @@ pragma solidity ^0.8.28;
  * @notice Global registry for unique Logos handles (NEXOs)
  * @dev Handles are Base36 (A-Z, 0-9), uppercase, 4-10 characters
  * 
- * Deployed on Base Mainnet: 0x0Eb28d2b84F48CE18742f6C42C5BA18c17b0d4E3
+ * Deployments:
+ * - Base Mainnet (V2): 0x87B9fD42553067BeBc2Abf42c7045C8F2F7D1A79
+ * - Legacy (V1): see `n4y.ai/logos/DEPLOYMENT.md`
  */
 contract NameRegistry {
     
